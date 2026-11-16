@@ -74,6 +74,88 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants {
+  margin-top: 14px;
+  padding: 16px 18px;
+  border: 1px solid #c5cae9;
+  border-radius: 6px;
+  background-color: #eef2ff;
+}
+
+.participants h5 {
+  margin-bottom: 12px;
+  color: #3949ab;
+  font-size: 1.1rem;
+}
+
+.participants ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+  color: #424b70;
+  overflow-wrap: anywhere;
+}
+
+.participants li:last-child {
+  margin-bottom: 0;
+}
+
+.participant-remove {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #a4262c;
+  background-color: transparent;
+}
+
+.participant-remove:hover {
+  border-color: #ef9a9a;
+  background-color: #ffebee;
+}
+
+.participant-remove:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participant-remove:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.participant-remove svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.activity-card .participants-empty {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+.activity-card .participant-action-error {
+  margin: 8px 0 0;
+  color: #c62828;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
